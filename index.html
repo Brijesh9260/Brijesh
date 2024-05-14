@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Homepage
+	</title>
+	<style>
+		header{
+			width: 100%;
+			height: 60px;
+			 
+			float: left;
+			box-sizing: border-box;
+			padding: 6px;
+		}
+		body{
+			padding: 0;
+			margin: 0;
+		}
+		#brand{
+			padding: 0;
+			margin: 0;
+			font-family: sans-serif;
+			float: left;
+			margin-left: 24px;
+		}
+		#tag_line{
+			float: right;
+			padding: 0;
+			margin: 0;
+			margin-top: 10px;
+			font-family: century gothic;
+			margin-right: 24px;
+		}
+		nav{
+			width: 100%;
+			height: 100px;
+			background-color: blue;
+			float: left;
+			box-sizing: border-box;
+			padding: 30px;
+		}
+		#search{
+			width: 500px;
+			height: 40px;
+			float: left;
+			box-sizing: border-box;
+			border: none;
+			font-size: 16px;
+			padding: 10px;
+		}
+		#submit{
+			width: 100px;
+			height: 40px;
+			float: left;
+			box-sizing: border-box;
+			border: none;
+			margin-left:4px ;
+			font-size: 16px;
+
+		}
+		#menu_table{
+			width: 600px;
+			height: 40px;
+			float:right;
+			box-sizing: border-box;
+
+		}
+		#menu_item{
+			background-color: white;
+			width: 20%;
+			text-align: center;
+		}
+		a{
+			text-decoration: none;
+			color: black;
+			font-family: sans-serif;
+		}
+		section{
+			width: 100%;
+			height: 1800px;
+			float: left;
+			box-sizing: border-box;
+			border-width:1px ;
+			border-style: solid;
+			border-color: blue;
+			padding: 30px;
+		}
+		#venu{
+			float: left;
+		}
+		#phone{
+			float: right;
+		}
+		#populer-sweets-box{
+			width: 720px;
+			height: 550px;
+			float: left;
+			box-sizing: border-box;
+			background-color: black;
+			margin-top: 30px;
+			padding: 25px;
+		}
+		#populer-sweets-title{
+			color: white;
+			text-align: center;
+			font-family: sans-serif;
+			font-size: 30px;
+			margin: 0px;
+			padding: 0px;
+		}
+		#populer-sweets-img{
+			width: 300px;
+			height: 200px;
+			margin: 15px;
+			border-width: 4px;
+			border-style: solid;
+			border-color: white;
+			box-sizing: border-box;
+		}
+		#rate_list_box{
+			width: 350px;
+			height: 550px;
+			float: right;
+			box-sizing: border-box;
+			margin-top: 12px;
+			
+		}
+		#sweet_name{
+			height: 50px;
+			background-color: black;
+			color: white;
+			text-align: center;
+			font-family: century gothic;
+			font-size: 25px;
+		}
+		#rate_content{
+			background-color: blue;
+		}
+		#s_name{
+			color: white;
+			font-family: century gothic;
+			font-size: 20px;
+			padding: 10px;
+			border-bottom-width: 2px;
+			border-bottom-style:solid ;
+			border-bottom-color: white;
+		}
+		#rate{
+			list-style: none;
+		}
+		fieldset{
+			width: 690px;
+			height: 550px;
+			float: left;
+			margin-top: 50px;
+			border-width: 1px;
+			border-style: solid;
+			border-color: #ccc;
+			padding: 10px;
+		}
+		legend{
+			font-family: century gothic;
+			font-size: 30px;
+			font-weight: bold;
+		}
+		#order_online{
+			font-size: 17px;
+			font-family: sans-serif;
+		}
+		#order_name{
+			width: 100%;
+			height: 35px;
+			box-sizing: border-box;
+			border-width: 1px;
+			border-style: solid;
+			border-color: #ccc;
+			margin-top: 5px;
+		}
+		textarea{
+			width: 100%;
+			height: 100px;
+			box-sizing: border-box;
+			border-width: 1px;
+			border-style: solid;
+			border-color: #ccc;
+		}
+		#submit_btn{
+			padding: 10px;
+			font-size: 15px;
+			float: right;
+			border-width: 1px;
+			border-style: solid;
+			border-color: #ccc;
+			background-color: white;
+		}
+		#abt_us{
+			width: 450px;
+			height: 550px;
+			float: right;
+			border-color: #ccc;
+			border-style: solid;
+			border-width: 1px;
+			margin-top: 65px;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+		#abt_title{
+			text-align: center;
+			font-family: century gothic;
+			font-size: 30px;
+		}
+		#text{
+			text-align: justify;
+			font-family: sans-serif;
+			line-height: 23px;
+		}
+		#more_sweet{
+			float: left;
+			width: 100%;
+			box-sizing: border-box;
+			
+		}
+		#m_sweet{
+			text-align: center;
+			font-family: century gothic;
+			font-size: 30px;
+		}
+		#sweets{
+			width: 220px;
+			height: 250px;
+			border-width: 1px;
+			border-style: solid;
+			border-color: #ccc;
+			float: left;
+			margin-right: 77px;
+		}
+		#sweets_end{
+			width: 220px;
+			height: 250px;
+			border-width: 1px;
+			border-style: solid;
+			border-color: #ccc;
+			float: left;
+		}
+		#sweet_pic{
+			width: 200px;
+			height: 190px;
+			margin: 10px;
+		}
+		#buy_btn{
+			padding: 5px;
+			border-width: 1px;
+			border-style: solid;
+			border-color: #ccc;
+			width: 100px;
+			background-color: white;
+		}	
+	</style>
+</head>
+<body>
+<header>
+<h1 id="brand">Sweetshop.com</h1>
+<p id="tag_line">The world's largest & bakeries shop</p>	
+
+</header>
+<nav>
+<form>
+	<input type="search" name="search" placeholder="search your sweets here"
+	id="search">
+	<input type="submit" id="submit" value="Search">
+</form>	
+<table id="menu_table">
+	<tr>
+		<td id="menu_item"><a href="#">Home</a></td>
+		<td id="menu_item"><a href="#">Sweets</a></td>
+		<td id="menu_item"><a href="#">Bakeries</a></td>
+		<td id="menu_item"><a href="#">About us</a></td>
+		<td id="menu_item"><a href="#"> Contact us</a></td>
+	</tr>
+</table>
+</nav>
+<section>
+<address id="venu">
+	Jahangirabad Barabanki utter pardersh 225202
+</address>	
+<address id="phone">
+	Contact Number: +91 9260989080 , 8354072272
+</address>
+
+<div id="populer-sweets-box">
+	<h1 id="populer-sweets-title">Our populer sweets</h1>
+	<img src="images/a.jpg" alt="a" id="populer-sweets-img" />
+	<img src="images/b.jpg" alt="b" id="populer-sweets-img"/>
+	<img src="images/c.jpeg" alt="c" id="populer-sweets-img"/>
+	<img src="images/a.jpg" alt="a" id="populer-sweets-img" />
+</div>
+<table id="rate_list_box">
+	<tr>
+		<td id="sweet_name">Sweet Name</td>
+		<td id="sweet_name"> Price</td>
+	</tr>
+
+	<tr>
+		<td id="rate_content">
+			<ol>
+				<li id="s_name">Milk kek</li>
+				<li id="s_name">Rasgula</li>
+				<li id="s_name">laddo</li>
+				<li id="s_name">jamun</li>
+				<li id="s_name">dudhiya</li>
+				<li id="s_name">besan</li>
+				<li id="s_name">Barfee</li>
+				<li id="s_name">jamun</li>
+				<li id="s_name">jamun</li>
+				<li id="s_name">jamun</li>
+				
+			</ol>
+		</td>
+		<td id="rate_content">
+			<ol id="rate">
+				<li id="s_name">300/kg</li>
+				<li id="s_name">200/kg</li>
+				<li id="s_name">120/kg</li>
+				<li id="s_name">200/kg</li>
+				<li id="s_name">200/kg</li>
+				<li id="s_name">200/kg</li>
+				<li id="s_name">200/kg</li>
+				<li id="s_name">200/kg</li>
+				<li id="s_name">200/kg</li>
+				<li id="s_name">200/kg</li>
+			</ol>
+		</td>
+	</tr>
+
+</table>
+
+<fieldset id="form_box">
+<legend>Order Online</legend>
+
+<form id="order_online">
+	Buyer Name<br>
+	<input type="text" name="name" id="order_name"><br><br>
+	Mobile Number<br>
+	<input type="number" name="Mobile" id="order_name"><br><br>
+	Choose Sweets<br>
+	<select name="Choose_sweets" id="order_name">
+		<option value="resgulla">Rasgulla</option>
+		<option value="Milk kek">milk kek</option>
+		<option value="barfee">Barfee</option>
+		<option value="jamun">Jamun</option>
+		<option value="laddo">Laddo</option>
+		<option value="Ras malai">Ras Malai</option>
+
+		
+	</select>
+	<br><br>
+	Quantity<br>
+	<input type="text" name="Quantity" id="order_name">
+	<br><br>
+
+	Address<br>
+	<textarea name="address"></textarea>
+	<br><br>
+	<input type="submit" value="Order Now" id="submit_btn">
+</form>	
+
+</fieldset>
+<div id="abt_us">
+	<h1 align="center" id="abt_title">About Us</h1>
+	<hr>
+	<p id="text">Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
+To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.
+Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.
+
+
+</p>
+	
+</div>
+<div id="more_sweet">
+	<h1 id="m_sweet">More Sweets</h1>
+</div>
+
+<div id="sweets">
+<img src="images/a.jpg" id="sweet_pic">	
+<center>
+<a href="#form_box"><button id="buy_btn">Buy Now</button></a>
+</center>
+</div>
+
+<div id="sweets">
+<img src="images/b.jpg" id="sweet_pic">
+<center>
+<a href="#form_box"><button id="buy_btn">Buy Now</button></a>
+</center>
+</div>
+
+<div id="sweets">
+<img src="images/c.jpeg" id="sweet_pic">
+<center>
+<a href="#form_box"><button id="buy_btn">Buy Now</button></a>
+</center>
+</div>
+
+<div id="sweets">
+<img src="images/a.jpg" id="sweet_pic">	
+<center>
+<a href="#form_box"><button id="buy_btn">Buy Now</button></a>
+</center>
+</div>
+
+<div id="sweets_end">
+	<img src="images/b.jpg" id="sweet_pic">
+	<center>
+<a href="#form_box"><button id="buy_btn">Buy Now</button></a>
+</center>
+</div>
+
+
+</section>
+<footer>
+	
+
+</footer>
+</body>
+</html>
